@@ -33,3 +33,18 @@ function sayHello(name) {
 sayHello("An");
 sayHello("Bình");
 sayHello("Hiếu");
+
+console.log("Bai5");
+function sum(a,b){
+  return sum = a + b;
+}
+sum (4,5);
+console.log(sum);
+
+console.log('Bai6');
+function calculateTotal(price,quantity){
+  return price * quantity;
+}
+calculateTotal(20000,5);
+
+console.log('bai7');
