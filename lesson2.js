@@ -22,3 +22,19 @@ console.log("sau khi thay doi", students);
 for (let i =0; i< students.length;i++){
     console.log(students[i]);
 }
+
+// object
+const student ={
+    id: "ph6232",
+    name: "hoadv",
+    age: 36
+};
+console.log(student.id);
+student.id = "ph888";
+// student = {}=>error
+student.address ="ha noi";
+console.log(student.id);
+console.log(student.address);
+
+// array object
+

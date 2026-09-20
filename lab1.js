@@ -10,14 +10,14 @@ console.log("Tuổi:", age);
 console.log("Địa chỉ:", address);
 console.log("Trạng thái:", status);
 
-// bai 2
+console.log("bai2");
 let tuoi = 20;
 console.log(tuoi);
 tuoi = 21;
 console.log(tuoi);
 
 
-//bai 3
+console.log("bai3");
 const a = 10;
 const b = 5;
 
@@ -26,25 +26,31 @@ console.log("Hiệu:", a - b);
 console.log("Tích:", a * b);
 console.log("Thương:", a / b);
 
-//bai 4
+console.log("Bai4");
 function sayHello(name) {
-    console.log("Xin chào ",name);
+    console.log("Xin chào", name);
 }
 sayHello("An");
 sayHello("Bình");
 sayHello("Hiếu");
 
 console.log("Bai5");
-function sum(a,b){
-  return sum = a + b;
+function sum(a, b) {
+    return a + b;
 }
-sum (4,5);
-console.log(sum);
+let resultSum = sum(4, 5);
+console.log(resultSum);
 
-console.log('Bai6');
-function calculateTotal(price,quantity){
-  return price * quantity;
+console.log("Bai6");
+function calculateTotal(price, quantity) {
+    return price * quantity;
 }
-calculateTotal(20000,5);
+let total = calculateTotal(20000, 5);
+console.log(total);
 
-console.log('bai7');
+console.log("Bai7");
+function calculateAverage(math, english, javascript) {
+    return (math + english + javascript) / 3;
+}
+let average = calculateAverage(7, 8, 9);
+console.log(average);
