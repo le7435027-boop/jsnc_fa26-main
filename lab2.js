@@ -33,7 +33,7 @@ console.log("Phone:", student.phone);
 console.log("Student sau khi cập nhật:", student);
 
 console.log("Bai 4");
-const students = [
+const studentss = [
     {
         id: 1,
         name: "Nguyễn Văn An",
@@ -51,14 +51,56 @@ const students = [
     }
 ];
 console.log("Danh sách sinh viên:");
-console.log(students);
-console.log("Tên sinh viên đầu tiên:", students[0].name);
-console.log("Tuổi sinh viên thứ hai:", students[1].age);
+console.log(studentss);
+console.log("Tên sinh viên đầu tiên:", studentss[0].name);
+console.log("Tuổi sinh viên thứ hai:", studentss[1].age);
 console.log("Duyệt danh sách:");
-for (let i = 0; i < students.length; i++) {
-    console.log(students[i]);
+for (let i = 0; i < studentss.length; i++) {
+    console.log(studentss[i]);
 }
 console.log("Tên tất cả sinh viên:");
-for (let i = 0; i < students.length; i++) {
-    console.log(students[i].name);
+for (let i = 0; i < studentss.length; i++) {
+    console.log(studentss[i].name);
 }
+
+console.log("bai5");
+const products = [
+    {
+        id: 1,
+        name: "iPhone 15",
+        price: 20000000
+    },
+    {
+        id: 2,
+        name: "Samsung Galaxy S24",
+        price: 18000000
+    },
+    {
+        id: 3,
+        name: "Xiaomi 14",
+        price: 12000000
+    }
+];
+console.log("Danh sach:");
+console.log(products);
+console.log("Ten sp + gia:");
+
+for (let i = 0; i < products.length; i++) {
+    console.log(products[i].name + " - " + products[i].price);
+}
+let Tong = 0;
+for (let i = 0; i < products.length; i++) {
+    Tong = Tong + products[i].price;
+}
+console.log("Tong gia:", Tong);
+let productList = document.getElementById("products");
+productList.innerHTML = "";
+for (let i = 0; i < products.length; i++) {
+    productList.innerHTML += `
+        <div>
+            <h3>${products[i].name}</h3>
+            <p>Giá: ${products[i].price} VNĐ</p>
+        </div>
+    `;
+}
+console.log(products);
